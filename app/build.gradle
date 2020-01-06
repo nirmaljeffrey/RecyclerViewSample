@@ -26,6 +26,18 @@ android {
     }
 }
 
+ext {
+    room_version = "2.2.3"
+    retrofit_version = "2.6.1"
+    rxjava_version="2.2.7"
+    rxjava_android_version="2.1.1"
+    rxjava_adapter_Version="2.6.2"
+    lifecycle_version = "2.1.0"
+    paging_version = "2.1.1"
+    glide_version="4.10.0"
+    stetho_version="1.5.1"
+}
+
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
     implementation 'androidx.appcompat:appcompat:1.1.0'
@@ -35,4 +47,31 @@ dependencies {
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
     implementation 'androidx.recyclerview:recyclerview:1.1.0'
     implementation 'androidx.cardview:cardview:1.0.0'
+    //Room
+    implementation "androidx.room:room-runtime:$room_version"
+    annotationProcessor "androidx.room:room-compiler:$room_version"
+    //Retrofit
+    implementation "com.squareup.retrofit2:retrofit:$retrofit_version"
+    //Gson
+    implementation "com.squareup.retrofit2:converter-gson:$retrofit_version"
+    //Rx Java
+    implementation "io.reactivex.rxjava2:rxjava:$rxjava_version"
+    //Rx Android
+    implementation "io.reactivex.rxjava2:rxandroid:$rxjava_android_version"
+    //Rx java adapter
+    implementation "com.squareup.retrofit2:adapter-rxjava2:$rxjava_adapter_Version"
+    // ViewModel and LiveData
+    implementation "androidx.lifecycle:lifecycle-extensions:$lifecycle_version"
+    //Paging
+    implementation "androidx.paging:paging-runtime:$paging_version"
+    //Glide
+    implementation "com.github.bumptech.glide:glide:$glide_version"
+    annotationProcessor "com.github.bumptech.glide:compiler:$glide_version"
+    //Sthetho
+    implementation "com.facebook.stetho:stetho:$stetho_version"
+    implementation "com.facebook.stetho:stetho-okhttp3:$stetho_version"
+
+
+
+
 }

@@ -1,5 +1,9 @@
 package com.nirmal.jeffrey.recyclerviewsample.util;
 
+import android.content.Context;
+import android.util.Log;
+import android.widget.ImageView;
+import androidx.databinding.BindingAdapter;
 import com.nirmal.jeffrey.recyclerviewsample.R;
 import com.nirmal.jeffrey.recyclerviewsample.model.AndroidFlavor;
 import java.util.ArrayList;
@@ -23,4 +27,5 @@ public final class AndroidFlavorsUtil {
     androidFlavorList.add(new AndroidFlavor("Marshmallow", "6.0-6.0.1", R.drawable.marshmallow));
     return androidFlavorList;
   }
+
 }

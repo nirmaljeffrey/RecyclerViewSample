@@ -33,6 +33,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         break;
       }
       case R.id.paged_list_adapter_button:{
+        intent = new Intent(this, PagedListAdapterActivity.class);
         break;
       }
     }

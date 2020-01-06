@@ -20,13 +20,6 @@ public class AndroidFlavourListAdapter extends ListAdapter<AndroidFlavor, Androi
   private AndroidFlavorClickListener flavorClickListener;
   private static DiffUtil.ItemCallback<AndroidFlavor> DIFF_CALLBACK = new ItemCallback<AndroidFlavor>() {
 
-
-    @Nullable
-    @Override
-    public Object getChangePayload(@NonNull AndroidFlavor oldItem, @NonNull AndroidFlavor newItem) {
-      return super.getChangePayload(oldItem, newItem);
-    }
-
     @Override
     public boolean areItemsTheSame(@NonNull AndroidFlavor oldItem, @NonNull AndroidFlavor newItem) {
       return oldItem.getVersionNumber().equals(newItem.getVersionNumber()) ;

@@ -18,7 +18,6 @@ import com.nirmal.jeffrey.recyclerviewsample.adapter.AndroidFlavorRecyclerViewAd
 import com.nirmal.jeffrey.recyclerviewsample.databinding.ActivityRecyclerViewBinding;
 import com.nirmal.jeffrey.recyclerviewsample.model.AndroidFlavor;
 import com.nirmal.jeffrey.recyclerviewsample.userinterface.dialog.FlavorInfoDialogFragment;
-import java.util.ArrayList;
 import java.util.List;
 
 public class RecyclerViewAdapterActivity extends AppCompatActivity implements

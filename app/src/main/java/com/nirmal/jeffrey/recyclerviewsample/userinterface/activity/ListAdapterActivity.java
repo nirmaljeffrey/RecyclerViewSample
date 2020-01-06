@@ -24,7 +24,7 @@ import java.util.List;
 
 public class ListAdapterActivity extends AppCompatActivity implements AndroidFlavorClickListener {
 private AndroidFlavourListAdapter adapter;
-private List<AndroidFlavor> flavorList;
+
   @Override
   protected void onCreate(Bundle savedInstanceState) {
     super.onCreate(savedInstanceState);
@@ -35,7 +35,7 @@ private List<AndroidFlavor> flavorList;
     // you must call this method
     binding.recyclerView.setHasFixedSize(true);
     binding.recyclerView.setLayoutManager(new LinearLayoutManager(this,LinearLayoutManager.VERTICAL,false));
-    flavorList = createAndroidFlavorList();
+    List<AndroidFlavor> flavorList = createAndroidFlavorList();
     setUpItemTouchHelperToRecyclerView(binding.recyclerView);
     adapter = new AndroidFlavourListAdapter(this);
     binding.recyclerView.setAdapter(adapter);
